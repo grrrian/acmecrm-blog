@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weekly Reporting in 10 Minutes: A Dashboard Setup Guide</title>
+    <meta
+      name="description"
+      content="How to set up a weekly report that your team actually reads."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="Weekly Reporting in 10 Minutes: A Dashboard Setup Guide"
+    />
+    <meta
+      property="og:description"
+      content="How to set up a weekly report that your team actually reads."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://grrrian.github.io/acmecrm-blog/posts/2026-02-19-weekly-reporting.html"
+    />
+    <meta
+      property="og:image"
+      content="https://grrrian.github.io/acmecrm-blog/post-03.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Weekly Reporting in 10 Minutes: A Dashboard Setup Guide"
+    />
+    <meta
+      name="twitter:description"
+      content="How to set up a weekly report that your team actually reads."
+    />
+    <meta
+      name="twitter:image"
+      content="https://grrrian.github.io/acmecrm-blog/post-03.jpg"
+    />
+
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          sans-serif;
+        margin: 0;
+        color: #111;
+        background: #fff;
+      }
+      header {
+        padding: 28px 18px 12px;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      main {
+        padding: 0 18px 48px;
+        max-width: 860px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .kicker {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #666;
+      }
+      h1 {
+        margin: 10px 0 8px;
+        line-height: 1.15;
+      }
+      .meta {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 18px;
+      }
+      img.hero {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 18px 0 8px;
+      }
+      .steps {
+        border: 1px solid #eee;
+        border-radius: 10px;
+        padding: 14px;
+        background: #fafafa;
+      }
+      .steps ol {
+        margin: 0;
+        padding-left: 18px;
+      }
+      .callout {
+        border-left: 4px solid #111;
+        padding: 10px 14px;
+        background: #f6f6f6;
+        border-radius: 8px;
+        margin: 18px 0;
+      }
+      a {
+        color: inherit;
+      }
+      footer {
+        margin-top: 36px;
+        padding-top: 16px;
+        border-top: 1px solid #eee;
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="kicker">ACME CRM Blog</div>
+      <h1>Weekly Reporting in 10 Minutes: A Dashboard Setup Guide</h1>
+      <div class="meta">Feb 19, 2026 · 5 min read</div>
+    </header>
+
+    <main>
+      <img
+        class="hero"
+        src="https://grrrian.github.io/acmecrm-blog/post-03.jpg"
+        alt="Weekly report preview"
+      />
+
+      <p>
+        Weekly reports fail when they’re long, late, and full of numbers nobody
+        can act on. A good report is short, repeatable, and tied to decisions.
+      </p>
+
+      <div class="callout">
+        <strong>Rule:</strong> If a metric doesn’t change what someone does this
+        week, it doesn’t belong in the weekly report.
+      </div>
+
+      <h2>The 10-minute setup</h2>
+      <div class="steps">
+        <ol>
+          <li>
+            <strong>Pick 3 outcomes.</strong> Example: pipeline created, deals
+            progressed, churn risk reduced.
+          </li>
+          <li>
+            <strong>Choose 5 metrics max.</strong> Keep them stable week-to-week
+            so trends matter.
+          </li>
+          <li>
+            <strong>Define a single time window.</strong> “Last 7 days” or “This
+            week” (not both).
+          </li>
+          <li>
+            <strong>Add one narrative section.</strong> A short paragraph: wins,
+            risks, asks.
+          </li>
+          <li>
+            <strong>Automate delivery.</strong> Schedule it and include a link
+            to the dashboard view.
+          </li>
+        </ol>
+      </div>
+
+      <h2>A simple weekly template</h2>
+      <ul>
+        <li><strong>Wins:</strong> 2–3 bullets</li>
+        <li><strong>Risks:</strong> 1–2 bullets</li>
+        <li>
+          <strong>Asks:</strong> what you need from leadership / other teams
+        </li>
+        <li>
+          <strong>Metrics:</strong> 5 numbers with arrows (up/down) and one
+          sentence each
+        </li>
+      </ul>
+
+      <h2>Demo-friendly data</h2>
+      <p>
+        If you’re demoing on a test environment, you can generate believable
+        data without building a full analytics pipeline:
+      </p>
+      <ul>
+        <li>
+          Create ~20 deals with stage transitions spread over the last 14 days.
+        </li>
+        <li>
+          Mark 3 deals as “at risk” with a reason tag (pricing, security review,
+          timing).
+        </li>
+        <li>
+          Show a “weekly digest” view that summarizes stage movement and next
+          steps.
+        </li>
+      </ul>
+
+      <footer>
+        <p>
+          Back to
+          <a href="https://grrrian.github.io/acmecrm-blog/">ACME CRM Blog</a> ·
+          RSS:
+          <a href="https://grrrian.github.io/acmecrm-blog/rss.xml">rss.xml</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How ACME CRM Cut Support Tickets by 32% with Automations</title>
+    <meta
+      name="description"
+      content="Three automations that reduced inbound support volume without hurting CSAT."
+    />
+
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="How ACME CRM Cut Support Tickets by 32% with Automations"
+    />
+    <meta
+      property="og:description"
+      content="Three automations that reduced inbound support volume without hurting CSAT."
+    />
+    <meta property="og:type" content="article" />
+    <meta
+      property="og:url"
+      content="https://grrrian.github.io/acmecrm-blog/posts/2026-02-17-automations.html"
+    />
+    <meta
+      property="og:image"
+      content="https://grrrian.github.io/acmecrm-blog/post-01.jpg"
+    />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="How ACME CRM Cut Support Tickets by 32% with Automations"
+    />
+    <meta
+      name="twitter:description"
+      content="Three automations that reduced inbound support volume without hurting CSAT."
+    />
+    <meta
+      name="twitter:image"
+      content="https://grrrian.github.io/acmecrm-blog/post-01.jpg"
+    />
+
+    <style>
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Arial,
+          sans-serif;
+        margin: 0;
+        color: #111;
+        background: #fff;
+      }
+      header {
+        padding: 28px 18px 12px;
+        max-width: 860px;
+        margin: 0 auto;
+      }
+      main {
+        padding: 0 18px 48px;
+        max-width: 860px;
+        margin: 0 auto;
+        line-height: 1.6;
+      }
+      .kicker {
+        font-size: 13px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #666;
+      }
+      h1 {
+        margin: 10px 0 8px;
+        line-height: 1.15;
+      }
+      .meta {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 18px;
+      }
+      img.hero {
+        width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin: 18px 0 8px;
+      }
+      .callout {
+        border-left: 4px solid #111;
+        padding: 10px 14px;
+        background: #f6f6f6;
+        border-radius: 8px;
+        margin: 18px 0;
+      }
+      ul {
+        padding-left: 18px;
+      }
+      a {
+        color: inherit;
+      }
+      footer {
+        margin-top: 36px;
+        padding-top: 16px;
+        border-top: 1px solid #eee;
+        color: #666;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="kicker">ACME CRM Blog</div>
+      <h1>How ACME CRM Cut Support Tickets by 32% with Automations</h1>
+      <div class="meta">Feb 17, 2026 · 6 min read</div>
+    </header>
+
+    <main>
+      <img
+        class="hero"
+        src="https://grrrian.github.io/acmecrm-blog/post-01.jpg"
+        alt="Automations dashboard"
+      />
+
+      <p>
+        The fastest way to reduce support tickets isn’t hiring more agents. It’s
+        removing the reasons people have to ask in the first place.
+      </p>
+
+      <p>
+        Over a six-week sprint, ACME CRM rolled out three small automations that
+        quietly removed friction across onboarding, billing, and “where is my
+        thing?” requests. The result: fewer tickets, faster resolution on the
+        tickets that remained, and no drop in CSAT.
+      </p>
+
+      <div class="callout">
+        <strong>Quick takeaway:</strong> Start by automating the questions you
+        can answer with data you already have (status, timelines, ownership),
+        then move into proactive nudges.
+      </div>
+
+      <h2>1) “Status Update” Automation</h2>
+      <p>
+        The #1 ticket type was the simplest: <em>“Any update?”</em> ACME added a
+        rule that triggers whenever an opportunity changes stage or a task hits
+        “Blocked.”
+      </p>
+      <ul>
+        <li>
+          Sends a templated update email to the customer (what changed, what’s
+          next, ETA).
+        </li>
+        <li>
+          Creates an internal note so the team sees exactly what the customer
+          received.
+        </li>
+        <li>Only triggers once per stage to avoid spamming.</li>
+      </ul>
+
+      <h2>2) Invoice Clarifier</h2>
+      <p>
+        Billing questions often come from unclear invoice line items. ACME added
+        a one-click invoice “explain” link that expands common charges (seats,
+        usage, add-ons) in plain language.
+      </p>
+      <ul>
+        <li>
+          Charges are grouped by category, with human-readable descriptions.
+        </li>
+        <li>Usage shows the date range and the activity that generated it.</li>
+        <li>Refund policy + cancellation timing is included inline.</li>
+      </ul>
+
+      <h2>3) Onboarding Nudge (With Escape Hatch)</h2>
+      <p>
+        Many “help me set up” tickets were really users getting stuck on step 2
+        of onboarding. ACME added a nudge triggered by inactivity:
+      </p>
+      <ul>
+        <li>After 24 hours of no progress, send a friendly checklist.</li>
+        <li>After 72 hours, offer a “15-minute setup call” button.</li>
+        <li>
+          Stop all nudges once the user completes the key setup milestones.
+        </li>
+      </ul>
+
+      <h2>What to copy for your own CRM</h2>
+      <p>
+        If you’re implementing this for a demo environment, you can fake the
+        data and still show the workflow:
+      </p>
+      <ul>
+        <li>Use a handful of “customer” records with staged timestamps.</li>
+        <li>
+          Trigger automations on deterministic events (stage changes, overdue
+          tasks, invoice generation).
+        </li>
+        <li>
+          Log every automation run so you can show a clean audit trail during
+          the demo.
+        </li>
+      </ul>
+
+      <footer>
+        <p>
+          Back to
+          <a href="https://grrrian.github.io/acmecrm-blog/">ACME CRM Blog</a> ·
+          RSS:
+          <a href="https://grrrian.github.io/acmecrm-blog/rss.xml">rss.xml</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>

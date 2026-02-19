@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:media="http://search.yahoo.com/mrss/">
+
+<channel>
+  <title>ACME CRM Blog</title>
+  <!-- IMPORTANT: set this to your GitHub Pages site URL, not the GitHub repo URL -->
+  <link>https://grrrian.github.io/acmecrm-blog/</link>
+  <description>Demo blog feed for Distribution.ai</description>
+  <language>en-us</language>
+  <lastBuildDate>Thu, 19 Feb 2026 15:15:00 GMT</lastBuildDate>
+
+  <!-- Self-referencing feed URL (nice-to-have for feed readers) -->
+  <atom:link href="https://grrrian.github.io/acmecrm-blog/rss.xml" rel="self" type="application/rss+xml" />
+
+  <!-- Blog cover image (channel-level). Many clients show this as the feed icon/cover. -->
+  <image>
+    <url>https://grrrian.github.io/acmecrm-blog/cover.jpg</url>
+    <title>ACME CRM Blog</title>
+    <link>https://grrrian.github.io/acmecrm-blog/</link>
+  </image>
+
+  <item>
+    <title>How ACME CRM Cut Support Tickets by 32% with Automations</title>
+    <link>https://grrrian.github.io/acmecrm-blog/posts/2026-02-17-automations.html</link>
+    <guid isPermaLink="true">https://grrrian.github.io/acmecrm-blog/posts/2026-02-17-automations.html</guid>
+    <pubDate>Tue, 17 Feb 2026 13:00:00 GMT</pubDate>
+    <description><![CDATA[
+      <p>Three automations that reduced inbound support volume without hurting CSAT.</p>
+      <p><img src="https://grrrian.github.io/acmecrm-blog/post-01.jpg" alt="Automations dashboard" /></p>
+    ]]></description>
+    <!-- Per-post image (recommended for your UI thumbnails/cards) -->
+    <media:content url="https://grrrian.github.io/acmecrm-blog/post-01.jpg" medium="image" />
+    <media:thumbnail url="https://grrrian.github.io/acmecrm-blog/post-01.jpg" />
+  </item>
+
+  <item>
+    <title>From Leads to Loyal Customers: The ACME CRM Funnel Template</title>
+    <link>https://grrrian.github.io/acmecrm-blog/posts/2026-02-18-funnel-template.html</link>
+    <guid isPermaLink="true">https://grrrian.github.io/acmecrm-blog/posts/2026-02-18-funnel-template.html</guid>
+    <pubDate>Wed, 18 Feb 2026 10:30:00 GMT</pubDate>
+    <description><![CDATA[
+      <p>A simple funnel template you can copy—plus the 5 fields that make it work.</p>
+      <p><img src="https://grrrian.github.io/acmecrm-blog/post-02.jpg" alt="CRM funnel diagram" /></p>
+    ]]></description>
+    <media:content url="https://grrrian.github.io/acmecrm-blog/post-02.jpg" medium="image" />
+    <media:thumbnail url="https://grrrian.github.io/acmecrm-blog/post-02.jpg" />
+  </item>
+
+  <item>
+    <title>Weekly Reporting in 10 Minutes: A Dashboard Setup Guide</title>
+    <link>https://grrrian.github.io/acmecrm-blog/posts/2026-02-19-weekly-reporting.html</link>
+    <guid isPermaLink="true">https://grrrian.github.io/acmecrm-blog/posts/2026-02-19-weekly-reporting.html</guid>
+    <pubDate>Thu, 19 Feb 2026 09:00:00 GMT</pubDate>
+    <description><![CDATA[
+      <p>How to set up a weekly report that your team actually reads.</p>
+      <p><img src="https://grrrian.github.io/acmecrm-blog/post-03.jpg" alt="Weekly report preview" /></p>
+    ]]></description>
+    <media:content url="https://grrrian.github.io/acmecrm-blog/post-03.jpg" medium="image" />
+    <media:thumbnail url="https://grrrian.github.io/acmecrm-blog/post-03.jpg" />
+  </item>
+
+</channel>
+</rss>
